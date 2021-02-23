@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meme 3d</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+
+</head>
+<body>
+    <a-scene  loading-screen="dotsColor: black; backgroundColor: black" vr-mode-ui="enabled: false" >
+       
+        <a-entity environment="active: true; skyType: gradient; skyColor: #75b2f5; horizonColor: #9ec3ea; lightPosition: 1 4 1s; fog: 0.7; flatShading: true; ground: canyon; groundYScale: 3.5699999999999994; groundTexture: checkerboard; groundColor: #fee33f; groundColor2: #f8eca2; dressing: stones; dressingAmount: 100; dressingColor: #e7cdc6; dressingScale: 3.8299999999999996; dressingVariance: [object Object]; grid: 1x1; dressingOnPlayArea: 0.02; gridColor: #39d2f2; shadowSize: 10.52; preset: starry"
+        animation__cielo="property:environment.skyColor; to: #ec00d3w; dur: 8000; easing: linear; loop: true; dir: alternate" 
+        animation__pisos="property:environment.groundColor; to: #8FF7FF; dur: 8000; easing: linear; loop: true; dir: alternate" ></a-entity>
+
+        <a-assets>
+            <a-asset-item  id="diamond" src="./assets/diamond.gltf"></a-asset-item>
+            <a-asset-item  id="chinchen" src="./assets/chinchen.gltf"></a-asset-item>
+            <a-asset-item  id="piramide" src="./assets/piramide.gltf"></a-asset-item>
+            <a-asset-item  id="rapa" src="./assets/rapa.gltf"></a-asset-item>
+
+        </a-assets>
+
+        <a-entity position="-30.96854 0 -57.27112" rotation=" 0 39.017 0"  gltf-model="#chinchen"  ></a-entity>
+
+
+        <a-camera position="1 3 11"></a-camera>
+    </a-scene>
+</body>
+</html>
